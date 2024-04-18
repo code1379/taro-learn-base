@@ -9,7 +9,7 @@ export default function Index() {
 
   return (
     <View className="index">
-      <Text>Hello world GG!</Text>
+      <Text>Hello world!</Text>
     </View>
   );
 }
