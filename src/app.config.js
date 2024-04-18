@@ -1,9 +1,10 @@
+// https://docs.taro.zone/docs/app-config
 export default defineAppConfig({
   pages: ["pages/index/index"],
   window: {
     backgroundTextStyle: "light",
-    navigationBarBackgroundColor: "#fff",
-    navigationBarTitleText: "WeChat",
-    navigationBarTextStyle: "black",
+    navigationBarBackgroundColor: "#ff454e",
+    navigationBarTitleText: "Taro App",
+    navigationBarTextStyle: "white",
   },
 });
