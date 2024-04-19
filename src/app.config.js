@@ -5,6 +5,7 @@ export default defineAppConfig({
     "pages/category/index",
     "pages/cart/index",
     "pages/profile/index",
+    "pages/detail/index",
     "pages/style-taro/index",
     "pages/cpns/cpns",
     "pages/index/index",
