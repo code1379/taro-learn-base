@@ -11,6 +11,15 @@ export default function Home() {
   const handleClick = () => {
     Taro.navigateTo({
       url: "/pages/detail/index?id=2",
+      // 注意，这种方式只支持微信小程序端
+      success: (res) => {
+        // console.log(res);
+        // 通过 eventChannel 向被打开页面传送数据
+        res.eventChannel.emit("acceptDataFromHomePage", {
+          name: "dell",
+          age: 18,
+        });
+      },
     });
     // Taro.redirectTo({
     //   url: "/pages/detail/index?id=2",
