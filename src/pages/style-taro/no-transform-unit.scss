@@ -1,0 +1,9 @@
+/* postcss-pxtransform disable */
+.no-transform-unit {
+  // 大写的单位不会被转换
+  // border: 6PX solid red;
+
+  // 或者添加 postcss 注释，即使是小写的单位也不会被转换
+  border: 6px solid red;
+
+}
