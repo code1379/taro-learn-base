@@ -1,0 +1,47 @@
+// 全局样式
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+.v-scroll {
+  height: 400px;
+  background-color: pink;
+}
+
+.v-item {
+  height: 200px;
+  border-bottom: 1px solid #000;
+}
+
+.h-scroll {
+  background-color: thistle;
+}
+
+.h-list {
+  display: flex;
+}
+
+.h-item {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.h-scroll2 {
+  white-space: nowrap;
+}
+
+
+.h-item2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.banner {}
+
+.banner-item-image {
+  height: 100%;
+  width: 100%;
+}

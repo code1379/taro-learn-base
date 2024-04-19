@@ -1,4 +1,4 @@
-import { View, Text } from "@tarojs/components";
+import { View, Text, Button } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
 import { get as getGlobalData } from "@/global_data.js";
