@@ -31,6 +31,8 @@ export default function index() {
       <View className="title">在局部样式中使用 :global 定义的全局样式</View>
 
       <View className={styles["bg-img"]}></View>
+
+      <Text className="iconfont icon-tuichu text" />
     </View>
   );
 }
