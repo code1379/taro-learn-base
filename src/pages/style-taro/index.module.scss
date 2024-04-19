@@ -1,0 +1,13 @@
+.local-style {
+  color: blueviolet;
+  border: 4px solid blueviolet;
+
+  .name {
+    color: red;
+  }
+}
+
+// 全局样式
+:global(.title) {
+  color: orange;
+}

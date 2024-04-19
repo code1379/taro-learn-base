@@ -3,6 +3,8 @@ import Taro from "@tarojs/taro";
 import "./index.scss";
 import "./no-transform-unit.scss";
 
+import styles from "./index.module.scss";
+
 export default function index() {
   const inlineStyle = {
     // fontSize: 30,
@@ -20,6 +22,13 @@ export default function index() {
         {/* 不写到 Text 里面也可以显示 */}
         <Text style={inlineStyle}>行内样式</Text>
       </View>
+
+      <View className={styles["local-style"]}>
+        <Text>编写局部样式</Text>
+        <Text className={styles.name}>name</Text>
+      </View>
+
+      <View className="title">在局部样式中使用 :global 定义的全局样式</View>
     </View>
   );
 }
