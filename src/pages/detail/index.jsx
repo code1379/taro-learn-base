@@ -19,6 +19,15 @@ export default function Detail() {
     });
   };
 
+  const handleBack1 = () => {
+    Taro.navigateBack({
+      delta: 1,
+    });
+    Taro.eventCenter.trigger("dataFromDetail", {
+      data: "dataCenter 详情页发出的数据",
+    });
+  };
+
   useLoad(() => {
     console.log("Page loaded.");
     eventChannel.on("acceptDataFromHomePage", (data) => {
@@ -29,7 +38,8 @@ export default function Detail() {
   return (
     <View className="detail">
       <Text>detail - {params.id}</Text>
-      <Button onClick={handleBack}>返回</Button>
+      <Button onClick={handleBack}>返回 eventChannel</Button>
+      <Button onClick={handleBack1}>返回 eventCenter</Button>
     </View>
   );
 }

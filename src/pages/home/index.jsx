@@ -2,6 +2,7 @@ import { View, Button, Navigator } from "@tarojs/components";
 import Taro, { useLoad } from "@tarojs/taro";
 
 import "./index.scss";
+import { useUnload } from "@tarojs/taro";
 
 export default function Home() {
   // const eventChannel = instance.page.getOpenerEventChannel();
@@ -9,8 +10,18 @@ export default function Home() {
   const page = pages[pages.length - 1];
   const eventChannel = page.getOpenerEventChannel();
 
-  useLoad((options) => {
-    console.log("Page loaded.", options);
+  const listenDataFromDetail = (data) => {
+    console.log("data", data);
+  };
+
+  useLoad(() => {
+    console.log("Page loaded.");
+
+    Taro.eventCenter.on("dataFromDetail", listenDataFromDetail);
+  });
+
+  useUnload(() => {
+    Taro.eventCenter.off("dataFromDetail", listenDataFromDetail);
   });
 
   const handleClick = () => {
