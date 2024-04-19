@@ -1,6 +1,7 @@
 // https://docs.taro.zone/docs/app-config
 export default defineAppConfig({
   pages: [
+    "pages/service/index",
     "pages/home/index",
     "pages/category/index",
     "pages/cart/index",
