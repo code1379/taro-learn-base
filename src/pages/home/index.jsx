@@ -4,6 +4,11 @@ import Taro, { useLoad } from "@tarojs/taro";
 import "./index.scss";
 
 export default function Home() {
+  // const eventChannel = instance.page.getOpenerEventChannel();
+  const pages = Taro.getCurrentPages();
+  const page = pages[pages.length - 1];
+  const eventChannel = page.getOpenerEventChannel();
+
   useLoad((options) => {
     console.log("Page loaded.", options);
   });
@@ -28,6 +33,17 @@ export default function Home() {
     //   url: "/pages/category/index",
     // });
   };
+
+  const handleClick1 = () => {
+    Taro.navigateTo({
+      url: "/pages/detail/index?id=22",
+      events: {
+        acceptDataFromDetailPage: function (data) {
+          console.log(data);
+        },
+      },
+    });
+  };
   return (
     <View className="home">
       <View>1. 页面跳转（组件）</View>
@@ -44,6 +60,7 @@ export default function Home() {
       </Navigator>
       <View>2. 页面跳转（API）</View>
       <Button onClick={handleClick}>跳转到详情页</Button>
+      <Button onClick={handleClick1}>跳转到详情页 - 接收详情页返回数据</Button>
     </View>
   );
 }
