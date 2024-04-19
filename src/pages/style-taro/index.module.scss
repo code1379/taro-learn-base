@@ -7,6 +7,19 @@
   }
 }
 
+
+.bg-img {
+  height: 400px;
+  border: 1px solid red;
+  // h5 和 weapp 支持相对路径
+  // background-image: url('../../assets/chongqing.jpg');
+  // 绝对路径（之前小程序不支持，现在支持了）
+  background-image: url(~@/assets/chongqing.jpg);
+  // background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 // 全局样式
 :global(.title) {
   color: orange;

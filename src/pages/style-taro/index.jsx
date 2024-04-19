@@ -29,6 +29,8 @@ export default function index() {
       </View>
 
       <View className="title">在局部样式中使用 :global 定义的全局样式</View>
+
+      <View className={styles["bg-img"]}></View>
     </View>
   );
 }
