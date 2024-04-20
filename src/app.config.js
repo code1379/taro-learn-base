@@ -1,6 +1,7 @@
 // https://docs.taro.zone/docs/app-config
 export default defineAppConfig({
   pages: [
+    "pages/platform/index",
     "pages/custom-cpn/index",
     "pages/service/index",
     "pages/home/index",
