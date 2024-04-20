@@ -53,6 +53,12 @@ dependencies:
   '@tarojs/taro':
     specifier: 3.6.26
     version: 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
+  classnames:
+    specifier: ^2.5.1
+    version: 2.5.1
+  proptypes:
+    specifier: ^1.1.0
+    version: 1.1.0
   react:
     specifier: ^18.0.0
     version: 18.2.0
@@ -10987,6 +10993,10 @@ packages:
 
   /property-expr@2.0.6:
     resolution: {integrity: sha512-SVtmxhRE/CGkn3eZY1T6pC8Nln6Fr/lu1mKSgRud0eC73whjGfoAogbn78LkD8aFL0zz3bAFerKSnOl7NlErBA==}
+
+  /proptypes@1.1.0:
+    resolution: {integrity: sha512-589N0gHNvg6ocCDia1knxMwguEcZq1qyD8fVxFZEdZP0YKI+GTHyflsJH2mYE0YZbo1KNj5W8avdSR4iJDV+fw==}
+    dev: false
 
   /proto-list@1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}

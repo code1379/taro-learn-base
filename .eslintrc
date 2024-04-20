@@ -4,7 +4,9 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "jsx-quotes": "off",
-    "import/no-commonjs": "off"
+    "import/no-commonjs": "off",
+    "import/no-duplicates": "off",
+    "import/first": "off"
   },
   "globals": {
     "definePageConfig": "readonly",
